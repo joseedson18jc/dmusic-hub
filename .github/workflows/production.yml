@@ -1,0 +1,50 @@
+name: Production deploy
+
+# Deploy de produção dispara em push pra main.
+# Roda tsc + tests antes — se falhar, NÃO deploya.
+
+on:
+  push:
+    branches: [main, master]
+  # Permite trigger manual via GitHub UI ("Run workflow")
+  workflow_dispatch:
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Type check
+        run: bunx tsc --noEmit
+
+      - name: Run tests
+        run: bun run test
+
+      - name: Pull Vercel env (production)
+        run: bunx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build for production
+        run: bunx vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to production
+        id: deploy
+        run: |
+          URL=$(bunx vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }})
+          echo "url=$URL" >> $GITHUB_OUTPUT
+          echo "PROD_URL=$URL" >> $GITHUB_ENV
+
+      - name: Annotate run
+        run: |
+          echo "::notice title=Production deployed::$PROD_URL"

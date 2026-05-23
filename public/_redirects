@@ -1,0 +1,7 @@
+# Cloudflare Pages SPA routing — serve index.html para qualquer rota que não
+# bata com arquivo estático ou Pages Function. Mantém deep-link funcionando
+# (ex: /usuarios, /financeiro/foo) sem 404 ao dar refresh.
+#
+# Importante: o `/api/*` NÃO precisa estar aqui porque Pages Functions em
+# `functions/api/*` interceptam antes desta regra fallback.
+/*    /index.html   200

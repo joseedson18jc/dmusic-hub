@@ -1,0 +1,261 @@
+[
+  {
+    "story": "design-system--designtokens--paleta",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--designtokens--paleta.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--designtokens--pipeline-phases",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--designtokens--pipeline-phases.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--designtokens--typography",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--designtokens--typography.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--kpicard--densities",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--kpicard--densities.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--kpicard--kpi-card-as-link",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--kpicard--kpi-card-as-link.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--kpicard--kpi-card-basic",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--kpicard--kpi-card-basic.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--kpicard--kpi-card-destructive-with-cta",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--kpicard--kpi-card-destructive-with-cta.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--kpicard--kpi-card-sign-flip",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--kpicard--kpi-card-sign-flip.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--kpicard--kpi-card-with-goal",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--kpicard--kpi-card-with-goal.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--kpicard--kpi-stat-tones",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--kpicard--kpi-stat-tones.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--kpicard--kpi-stat-with-hint",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--kpicard--kpi-stat-with-hint.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--statuspill--all-variants",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--statuspill--all-variants.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--statuspill--entities",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--statuspill--entities.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--statuspill--financial",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--statuspill--financial.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--statuspill--interactive",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--statuspill--interactive.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--statuspill--pipeline",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--statuspill--pipeline.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--statuspill--pulse",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--statuspill--pulse.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--statuspill--sizes",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--statuspill--sizes.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--statuspill--with-icons",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--statuspill--with-icons.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--activityheatmap--empty",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--activityheatmap--empty.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--activityheatmap--high-density",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--activityheatmap--high-density.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--activityheatmap--interactive",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--activityheatmap--interactive.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--activityheatmap--short-range",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--activityheatmap--short-range.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--activityheatmap--with-demo-data",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--activityheatmap--with-demo-data.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--donutchart--default",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--donutchart--default.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--donutchart--dominant",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--donutchart--dominant.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--donutchart--empty",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--donutchart--empty.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--donutchart--many-slices",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--donutchart--many-slices.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--donutchart--sizes",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--donutchart--sizes.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--donutchart--two-slices",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--donutchart--two-slices.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--radialprogress--animated",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--radialprogress--animated.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--radialprogress--custom-display-value",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--radialprogress--custom-display-value.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--radialprogress--edge-cases",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--radialprogress--edge-cases.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--radialprogress--glow",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--radialprogress--glow.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--radialprogress--sizes",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--radialprogress--sizes.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--radialprogress--steps",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--radialprogress--steps.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  },
+  {
+    "story": "design-system--radialprogress--tones",
+    "screenshot": "/Users/jose.costa/Downloads/dmusichub-main/screenshots/design-system--radialprogress--tones.png",
+    "consoleIssues": [],
+    "visualIssues": [],
+    "errorCount": 0
+  }
+]

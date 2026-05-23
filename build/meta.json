@@ -1,0 +1,453 @@
+{
+  "about": {
+    "homepage": "https://www.ladle.dev",
+    "github": "https://github.com/tajo/ladle",
+    "version": 1
+  },
+  "stories": {
+    "design-system--designtokens--paleta": {
+      "name": "Paleta",
+      "levels": [
+        "Design system",
+        "Designtokens"
+      ],
+      "locStart": 25,
+      "locEnd": 53,
+      "filePath": "src/components/DesignTokens.stories.tsx",
+      "namedExport": "Paleta",
+      "meta": {}
+    },
+    "design-system--designtokens--pipeline-phases": {
+      "name": "Pipeline phases",
+      "levels": [
+        "Design system",
+        "Designtokens"
+      ],
+      "locStart": 108,
+      "locEnd": 149,
+      "filePath": "src/components/DesignTokens.stories.tsx",
+      "namedExport": "PipelinePhases",
+      "meta": {}
+    },
+    "design-system--designtokens--typography": {
+      "name": "Typography",
+      "levels": [
+        "Design system",
+        "Designtokens"
+      ],
+      "locStart": 56,
+      "locEnd": 105,
+      "filePath": "src/components/DesignTokens.stories.tsx",
+      "namedExport": "Typography",
+      "meta": {}
+    },
+    "design-system--kpicard--densities": {
+      "name": "Densities",
+      "levels": [
+        "Design system",
+        "Kpicard"
+      ],
+      "locStart": 126,
+      "locEnd": 141,
+      "filePath": "src/components/KpiCard/KpiCard.stories.tsx",
+      "namedExport": "Densities",
+      "meta": {}
+    },
+    "design-system--kpicard--kpi-card-as-link": {
+      "name": "Kpi card as link",
+      "levels": [
+        "Design system",
+        "Kpicard"
+      ],
+      "locStart": 115,
+      "locEnd": 123,
+      "filePath": "src/components/KpiCard/KpiCard.stories.tsx",
+      "namedExport": "KpiCardAsLink",
+      "meta": {}
+    },
+    "design-system--kpicard--kpi-card-basic": {
+      "name": "Kpi card basic",
+      "levels": [
+        "Design system",
+        "Kpicard"
+      ],
+      "locStart": 62,
+      "locEnd": 71,
+      "filePath": "src/components/KpiCard/KpiCard.stories.tsx",
+      "namedExport": "KpiCardBasic",
+      "meta": {}
+    },
+    "design-system--kpicard--kpi-card-destructive-with-cta": {
+      "name": "Kpi card destructive with cta",
+      "levels": [
+        "Design system",
+        "Kpicard"
+      ],
+      "locStart": 86,
+      "locEnd": 97,
+      "filePath": "src/components/KpiCard/KpiCard.stories.tsx",
+      "namedExport": "KpiCardDestructiveWithCta",
+      "meta": {}
+    },
+    "design-system--kpicard--kpi-card-sign-flip": {
+      "name": "Kpi card sign flip",
+      "levels": [
+        "Design system",
+        "Kpicard"
+      ],
+      "locStart": 100,
+      "locEnd": 112,
+      "filePath": "src/components/KpiCard/KpiCard.stories.tsx",
+      "namedExport": "KpiCardSignFlip",
+      "meta": {}
+    },
+    "design-system--kpicard--kpi-card-with-goal": {
+      "name": "Kpi card with goal",
+      "levels": [
+        "Design system",
+        "Kpicard"
+      ],
+      "locStart": 74,
+      "locEnd": 83,
+      "filePath": "src/components/KpiCard/KpiCard.stories.tsx",
+      "namedExport": "KpiCardWithGoal",
+      "meta": {}
+    },
+    "design-system--kpicard--kpi-stat-tones": {
+      "name": "Kpi stat tones",
+      "levels": [
+        "Design system",
+        "Kpicard"
+      ],
+      "locStart": 21,
+      "locEnd": 38,
+      "filePath": "src/components/KpiCard/KpiCard.stories.tsx",
+      "namedExport": "KpiStatTones",
+      "meta": {}
+    },
+    "design-system--kpicard--kpi-stat-with-hint": {
+      "name": "Kpi stat with hint",
+      "levels": [
+        "Design system",
+        "Kpicard"
+      ],
+      "locStart": 41,
+      "locEnd": 59,
+      "filePath": "src/components/KpiCard/KpiCard.stories.tsx",
+      "namedExport": "KpiStatWithHint",
+      "meta": {}
+    },
+    "design-system--statuspill--all-variants": {
+      "name": "All variants",
+      "levels": [
+        "Design system",
+        "Statuspill"
+      ],
+      "locStart": 138,
+      "locEnd": 169,
+      "filePath": "src/components/StatusPill/StatusPill.stories.tsx",
+      "namedExport": "AllVariants",
+      "meta": {}
+    },
+    "design-system--statuspill--entities": {
+      "name": "Entities",
+      "levels": [
+        "Design system",
+        "Statuspill"
+      ],
+      "locStart": 37,
+      "locEnd": 69,
+      "filePath": "src/components/StatusPill/StatusPill.stories.tsx",
+      "namedExport": "Entities",
+      "meta": {}
+    },
+    "design-system--statuspill--financial": {
+      "name": "Financial",
+      "levels": [
+        "Design system",
+        "Statuspill"
+      ],
+      "locStart": 22,
+      "locEnd": 34,
+      "filePath": "src/components/StatusPill/StatusPill.stories.tsx",
+      "namedExport": "Financial",
+      "meta": {}
+    },
+    "design-system--statuspill--interactive": {
+      "name": "Interactive",
+      "levels": [
+        "Design system",
+        "Statuspill"
+      ],
+      "locStart": 93,
+      "locEnd": 117,
+      "filePath": "src/components/StatusPill/StatusPill.stories.tsx",
+      "namedExport": "Interactive",
+      "meta": {}
+    },
+    "design-system--statuspill--pipeline": {
+      "name": "Pipeline",
+      "levels": [
+        "Design system",
+        "Statuspill"
+      ],
+      "locStart": 10,
+      "locEnd": 19,
+      "filePath": "src/components/StatusPill/StatusPill.stories.tsx",
+      "namedExport": "Pipeline",
+      "meta": {}
+    },
+    "design-system--statuspill--pulse": {
+      "name": "Pulse",
+      "levels": [
+        "Design system",
+        "Statuspill"
+      ],
+      "locStart": 81,
+      "locEnd": 90,
+      "filePath": "src/components/StatusPill/StatusPill.stories.tsx",
+      "namedExport": "Pulse",
+      "meta": {}
+    },
+    "design-system--statuspill--sizes": {
+      "name": "Sizes",
+      "levels": [
+        "Design system",
+        "Statuspill"
+      ],
+      "locStart": 72,
+      "locEnd": 78,
+      "filePath": "src/components/StatusPill/StatusPill.stories.tsx",
+      "namedExport": "Sizes",
+      "meta": {}
+    },
+    "design-system--statuspill--with-icons": {
+      "name": "With icons",
+      "levels": [
+        "Design system",
+        "Statuspill"
+      ],
+      "locStart": 120,
+      "locEnd": 135,
+      "filePath": "src/components/StatusPill/StatusPill.stories.tsx",
+      "namedExport": "WithIcons",
+      "meta": {}
+    },
+    "design-system--activityheatmap--empty": {
+      "name": "Empty",
+      "levels": [
+        "Design system",
+        "Activityheatmap"
+      ],
+      "locStart": 10,
+      "locEnd": 14,
+      "filePath": "src/components/dashboard/ActivityHeatmap.stories.tsx",
+      "namedExport": "Empty",
+      "meta": {}
+    },
+    "design-system--activityheatmap--high-density": {
+      "name": "High density",
+      "levels": [
+        "Design system",
+        "Activityheatmap"
+      ],
+      "locStart": 48,
+      "locEnd": 64,
+      "filePath": "src/components/dashboard/ActivityHeatmap.stories.tsx",
+      "namedExport": "HighDensity",
+      "meta": {}
+    },
+    "design-system--activityheatmap--interactive": {
+      "name": "Interactive",
+      "levels": [
+        "Design system",
+        "Activityheatmap"
+      ],
+      "locStart": 31,
+      "locEnd": 45,
+      "filePath": "src/components/dashboard/ActivityHeatmap.stories.tsx",
+      "namedExport": "Interactive",
+      "meta": {}
+    },
+    "design-system--activityheatmap--short-range": {
+      "name": "Short range",
+      "levels": [
+        "Design system",
+        "Activityheatmap"
+      ],
+      "locStart": 24,
+      "locEnd": 28,
+      "filePath": "src/components/dashboard/ActivityHeatmap.stories.tsx",
+      "namedExport": "ShortRange",
+      "meta": {}
+    },
+    "design-system--activityheatmap--with-demo-data": {
+      "name": "With demo data",
+      "levels": [
+        "Design system",
+        "Activityheatmap"
+      ],
+      "locStart": 17,
+      "locEnd": 21,
+      "filePath": "src/components/dashboard/ActivityHeatmap.stories.tsx",
+      "namedExport": "WithDemoData",
+      "meta": {}
+    },
+    "design-system--donutchart--default": {
+      "name": "Default",
+      "levels": [
+        "Design system",
+        "Donutchart"
+      ],
+      "locStart": 19,
+      "locEnd": 31,
+      "filePath": "src/components/dashboard/DonutChart.stories.tsx",
+      "namedExport": "Default",
+      "meta": {}
+    },
+    "design-system--donutchart--dominant": {
+      "name": "Dominant",
+      "levels": [
+        "Design system",
+        "Donutchart"
+      ],
+      "locStart": 82,
+      "locEnd": 92,
+      "filePath": "src/components/dashboard/DonutChart.stories.tsx",
+      "namedExport": "Dominant",
+      "meta": {}
+    },
+    "design-system--donutchart--empty": {
+      "name": "Empty",
+      "levels": [
+        "Design system",
+        "Donutchart"
+      ],
+      "locStart": 34,
+      "locEnd": 38,
+      "filePath": "src/components/dashboard/DonutChart.stories.tsx",
+      "namedExport": "Empty",
+      "meta": {}
+    },
+    "design-system--donutchart--many-slices": {
+      "name": "Many slices",
+      "levels": [
+        "Design system",
+        "Donutchart"
+      ],
+      "locStart": 54,
+      "locEnd": 70,
+      "filePath": "src/components/dashboard/DonutChart.stories.tsx",
+      "namedExport": "ManySlices",
+      "meta": {}
+    },
+    "design-system--donutchart--sizes": {
+      "name": "Sizes",
+      "levels": [
+        "Design system",
+        "Donutchart"
+      ],
+      "locStart": 73,
+      "locEnd": 79,
+      "filePath": "src/components/dashboard/DonutChart.stories.tsx",
+      "namedExport": "Sizes",
+      "meta": {}
+    },
+    "design-system--donutchart--two-slices": {
+      "name": "Two slices",
+      "levels": [
+        "Design system",
+        "Donutchart"
+      ],
+      "locStart": 41,
+      "locEnd": 51,
+      "filePath": "src/components/dashboard/DonutChart.stories.tsx",
+      "namedExport": "TwoSlices",
+      "meta": {}
+    },
+    "design-system--radialprogress--animated": {
+      "name": "Animated",
+      "levels": [
+        "Design system",
+        "Radialprogress"
+      ],
+      "locStart": 66,
+      "locEnd": 84,
+      "filePath": "src/components/dashboard/RadialProgress.stories.tsx",
+      "namedExport": "Animated",
+      "meta": {}
+    },
+    "design-system--radialprogress--custom-display-value": {
+      "name": "Custom display value",
+      "levels": [
+        "Design system",
+        "Radialprogress"
+      ],
+      "locStart": 41,
+      "locEnd": 55,
+      "filePath": "src/components/dashboard/RadialProgress.stories.tsx",
+      "namedExport": "CustomDisplayValue",
+      "meta": {}
+    },
+    "design-system--radialprogress--edge-cases": {
+      "name": "Edge cases",
+      "levels": [
+        "Design system",
+        "Radialprogress"
+      ],
+      "locStart": 87,
+      "locEnd": 98,
+      "filePath": "src/components/dashboard/RadialProgress.stories.tsx",
+      "namedExport": "EdgeCases",
+      "meta": {}
+    },
+    "design-system--radialprogress--glow": {
+      "name": "Glow",
+      "levels": [
+        "Design system",
+        "Radialprogress"
+      ],
+      "locStart": 58,
+      "locEnd": 63,
+      "filePath": "src/components/dashboard/RadialProgress.stories.tsx",
+      "namedExport": "Glow",
+      "meta": {}
+    },
+    "design-system--radialprogress--sizes": {
+      "name": "Sizes",
+      "levels": [
+        "Design system",
+        "Radialprogress"
+      ],
+      "locStart": 32,
+      "locEnd": 38,
+      "filePath": "src/components/dashboard/RadialProgress.stories.tsx",
+      "namedExport": "Sizes",
+      "meta": {}
+    },
+    "design-system--radialprogress--steps": {
+      "name": "Steps",
+      "levels": [
+        "Design system",
+        "Radialprogress"
+      ],
+      "locStart": 10,
+      "locEnd": 17,
+      "filePath": "src/components/dashboard/RadialProgress.stories.tsx",
+      "namedExport": "Steps",
+      "meta": {}
+    },
+    "design-system--radialprogress--tones": {
+      "name": "Tones",
+      "levels": [
+        "Design system",
+        "Radialprogress"
+      ],
+      "locStart": 20,
+      "locEnd": 29,
+      "filePath": "src/components/dashboard/RadialProgress.stories.tsx",
+      "namedExport": "Tones",
+      "meta": {}
+    }
+  }
+}

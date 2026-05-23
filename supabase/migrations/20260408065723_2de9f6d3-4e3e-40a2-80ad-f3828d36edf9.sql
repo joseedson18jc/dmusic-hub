@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "DJ updates own bookings" ON public.bookings;

@@ -1,0 +1,1 @@
+CREATE POLICY "Anon can update bookings" ON public.bookings FOR UPDATE TO anon USING (true) WITH CHECK (true);

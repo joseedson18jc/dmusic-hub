@@ -1,0 +1,1 @@
+CREATE POLICY "DJ reads own tasks" ON public.tasks FOR SELECT TO authenticated USING (dj_id IN (SELECT id FROM public.djs WHERE user_id = auth.uid()));

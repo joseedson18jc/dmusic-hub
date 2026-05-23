@@ -1,0 +1,7 @@
+project_id = "ktmhxgiyvppvtmhvcerj"
+
+[functions.sign-contract]
+verify_jwt = false
+
+[functions.google-calendar-retry]
+verify_jwt = false

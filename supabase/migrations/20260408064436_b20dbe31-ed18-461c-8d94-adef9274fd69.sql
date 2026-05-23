@@ -1,0 +1,1 @@
+CREATE POLICY "Anon can insert DJs" ON public.djs FOR INSERT TO anon, authenticated WITH CHECK (true);

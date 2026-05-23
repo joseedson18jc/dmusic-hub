@@ -1,0 +1,2 @@
+CREATE TYPE public.evento_status AS ENUM ('confirmado', 'a_confirmar', 'adiado', 'cancelado');
+ALTER TABLE public.bookings ADD COLUMN IF NOT EXISTS evento_status public.evento_status DEFAULT 'a_confirmar';

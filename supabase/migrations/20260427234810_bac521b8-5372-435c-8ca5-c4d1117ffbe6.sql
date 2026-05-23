@@ -1,0 +1,2 @@
+REVOKE EXECUTE ON FUNCTION public.check_booking_conflict(uuid, uuid, date, time, time, uuid) FROM PUBLIC, anon;
+GRANT EXECUTE ON FUNCTION public.check_booking_conflict(uuid, uuid, date, time, time, uuid) TO authenticated;

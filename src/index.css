@@ -1,0 +1,352 @@
+/* Fonts loaded via index.html <link> tags to avoid render-blocking */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 33% 3%; /* #05050A */
+    --foreground: 210 20% 93%;
+
+    --card: 220 22% 7%;
+    --card-foreground: 210 20% 93%;
+
+    --popover: 220 22% 7%;
+    --popover-foreground: 210 20% 93%;
+
+    /* ── BRAND-SWAP (Phase 2a) ──────────────────────────────────
+     * primary = laranja (#FF6A00 ≈ 25 100% 52%) é a cor de marca DMusic.
+     * accent  = azul (217 100% 56%) virou cor funcional secundária / info.
+     * info     mantém-se azul (semântica universal "informativo").
+     * Mudança puramente de valor: nenhum componente shadcn precisa ser tocado
+     * — `bg-primary`, `text-primary`, `ring`, `sidebar-primary` herdam tudo.
+     * ─────────────────────────────────────────────────────────── */
+    --primary: 25 100% 52%;
+    --primary-foreground: 0 0% 100%;
+    /* Versão clara do primary para uso como TEXTO sobre fundos escuros (AA ≥ 4.5:1) */
+    --primary-text: 25 100% 65%;
+
+    --secondary: 220 18% 12%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 220 16% 10%;
+    --muted-foreground: 215 14% 60%; /* AA: 6.86 vs neon, 6.72 vs slate */
+
+    /* accent agora é o azul (era 30 95% 52% laranja, promovido a primary) */
+    --accent: 217 100% 56%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    /* Versão clara do destructive para uso como TEXTO (AA ≥ 4.5:1) */
+    --destructive-text: 0 84% 62%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+
+    --info: 217 100% 50%;            /* mantém azul — info é semantic */
+    --info-foreground: 0 0% 100%;
+
+    --violet: 270 70% 65%;           /* fase "realização" no pipeline */
+    --violet-foreground: 0 0% 100%;
+    --violet-text: 270 70% 78%;      /* texto/ícone sobre fundo violet tintado (realiz card) */
+
+    --slate: 220 10% 55%;            /* neutro semântico (lead, inativo, cancelado) */
+    --slate-foreground: 220 10% 92%;
+    --lead-text: 220 14% 78%;        /* texto/ícone sobre fundo slate tintado (lead card) */
+
+    --warning-text: 38 92% 70%;      /* texto/ícone sobre fundo warning tintado (negoc card) */
+
+    --magenta: 320 70% 60%;          /* acento decorativo (gradient do top-DJ winner) */
+    --magenta-foreground: 0 0% 100%;
+
+    --border: 220 16% 22%;          /* decorativo (sem mínimo WCAG) */
+    --input: 220 16% 40%;           /* UI/controle: AA ≥ 3:1 (WCAG 1.4.11) */
+    --ring: 25 100% 65%;             /* foco visível AA ≥ 3:1 — agora laranja matching primary */
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 240 33% 3%; /* #05050A */
+    --sidebar-foreground: 215 14% 70%; /* AA confortável em ambos temas */
+    --sidebar-primary: 25 100% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 18% 9%;
+    --sidebar-accent-foreground: 210 20% 93%;
+    --sidebar-border: 220 16% 11%;
+    --sidebar-ring: 25 100% 52%;
+
+    /* ── Chart tokens (data viz) ──────────────────────────── */
+    /* Semantic series */
+    --chart-revenue: var(--success);
+    --chart-expense: var(--destructive);
+    --chart-profit: var(--primary);
+    --chart-grid: var(--border);
+    --chart-axis: var(--muted-foreground);
+    /* Categorical palette (10 slots) — usar nesta ordem */
+    --chart-1: 217 100% 50%;
+    --chart-2: 30 95% 52%;
+    --chart-3: 142 71% 45%;
+    --chart-4: 0 72% 51%;
+    --chart-5: 270 60% 55%;
+    --chart-6: 180 60% 45%;
+    --chart-7: 45 90% 50%;
+    --chart-8: 320 60% 50%;
+    --chart-9: 200 70% 50%;
+    --chart-10: 100 50% 45%;
+  }
+
+  /* ─────────────────────────────────────────────────────────────
+   * CONTRATO DE TEMA · Neon Syndicate
+   * ─────────────────────────────────────────────────────────────
+   * 1. Paleta oficial ÚNICA: #05050A (HSL 240 33% 3%) — fixa.
+   * 2. Toda cor deriva de tokens semânticos HSL acima.
+   *    NUNCA escrever hex literal (#xxxxxx) em components/.tsx.
+   *    NUNCA usar classes como text-white, bg-black: use semantic tokens.
+   * 3. Alternância suportada via atributo `data-palette-preview`
+   *    no <html>, sobrescrevendo APENAS variáveis de fundo.
+   *    Componentes não precisam mudar — herdam por hsl(var(--token)).
+   * 4. O preview NÃO persiste (sessionStorage local, só admin).
+   *    NÃO é tema alternativo — é ferramenta de QA visual.
+   * ───────────────────────────────────────────────────────────── */
+
+  /* Preview-only: aplica #08090d como background quando admin ativa
+   * o toggle. Sobrescreve apenas variáveis de superfície escura,
+   * preservando primary/accent/contrastes da identidade. */
+  [data-palette-preview="dark-slate"] {
+    --background: 230 17% 4%;        /* #08090d */
+    --sidebar-background: 230 17% 4%;
+  }
+
+  /* Hook reservado para futuras variações declarativas (ex.: alto contraste).
+   * Ative adicionando `data-theme="high-contrast"` ao <html>. Não usado hoje. */
+  [data-theme="high-contrast"] {
+    --border: 220 16% 45%;
+    --muted-foreground: 215 14% 80%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11', 'ss01';
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Geist', 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.022em;
+    font-feature-settings: 'ss01', 'ss03';
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.4);
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50 shadow-sm;
+  }
+  .glass-card-hover {
+    @apply glass-card transition-all duration-200 hover:border-border hover:shadow-md;
+  }
+  .status-paid {
+    @apply bg-[hsl(var(--success))]/10 text-[hsl(var(--success))] border-[hsl(var(--success))]/20;
+  }
+  .status-pending {
+    @apply bg-[hsl(var(--warning))]/10 text-[hsl(var(--warning))] border-[hsl(var(--warning))]/20;
+  }
+  .status-overdue {
+    @apply bg-destructive/10 text-destructive border-destructive/20;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+  .section-title {
+    @apply text-xl font-semibold tracking-tight;
+  }
+  .section-subtitle {
+    @apply text-sm text-muted-foreground;
+  }
+  .empty-state {
+    @apply flex flex-col items-center justify-center py-16 text-center;
+  }
+
+  /* ── Acessibilidade WCAG AA ──────────────────────────────────
+   * Quando primary/destructive forem usados COMO TEXTO sobre o fundo escuro,
+   * usar a variante "text" (mais clara) garante contraste ≥ 4.5:1.
+   * Não afeta backgrounds (bg-primary, bg-destructive) nem botões. */
+  .text-primary {
+    color: hsl(var(--primary-text));
+  }
+  .text-destructive {
+    color: hsl(var(--destructive-text));
+  }
+
+  /* ── Neon Syndicate · detalhes de tema ───────────────────────
+   * Glow, scanlines e pulse usam tokens semânticos (sem hex literal).
+   * Aplicar pontualmente em headers, status online e CTAs principais. */
+  .heading-cyber {
+    font-family: 'Geist', 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.025em;
+    font-feature-settings: 'ss01', 'ss03';
+    font-weight: 600;
+  }
+  .font-mono-cyber {
+    font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-feature-settings: 'ss01';
+    letter-spacing: -0.01em;
+  }
+
+  /* Safe-area inset (iOS home indicator) para bottom-nav */
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  /* ── Layout helpers (responsivo & consistente) ────────────
+   * page-shell: container fluido com largura máxima e padding harmônico
+   * page-stack: vertical rhythm padrão (gap entre seções)
+   * page-grid-stats: grid de KPI/cards (1 → 2 → 4 colunas)
+   * page-grid-cards: grid de cards de listagem (1 → 2 → 3 → 4)
+   * page-grid-split: split 1 → 2 colunas para conteúdo + sidebar */
+  .page-shell {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  .page-stack { @apply space-y-5 md:space-y-6; }
+  .page-grid-stats {
+    @apply grid gap-3 md:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4;
+  }
+  .page-grid-cards {
+    @apply grid gap-3 md:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+  .page-grid-split {
+    @apply grid gap-4 md:gap-6 grid-cols-1 lg:grid-cols-3;
+  }
+  .neon-glow {
+    box-shadow:
+      0 0 0 1px hsl(var(--primary) / 0.35),
+      0 0 18px -2px hsl(var(--primary) / 0.45),
+      0 0 36px -8px hsl(var(--accent) / 0.25);
+  }
+  .neon-text-glow {
+    text-shadow:
+      0 0 10px hsl(var(--primary) / 0.45),
+      0 0 22px hsl(var(--primary) / 0.25);
+  }
+  .neon-border {
+    @apply border border-primary/40;
+    box-shadow: inset 0 0 0 1px hsl(var(--primary) / 0.08);
+  }
+  .neon-divider {
+    background-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--primary) / 0.45) 50%,
+      transparent 100%
+    );
+    height: 1px;
+  }
+  .scanline-overlay {
+    position: relative;
+  }
+  .scanline-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 2px,
+      hsl(var(--foreground) / 0.025) 2px,
+      hsl(var(--foreground) / 0.025) 3px
+    );
+    mix-blend-mode: overlay;
+  }
+  .neon-pulse {
+    animation: neon-pulse 2.4s ease-in-out infinite;
+  }
+  .neon-pulse-dot {
+    position: relative;
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background-color: hsl(var(--success));
+    box-shadow: 0 0 0 0 hsl(var(--success) / 0.6);
+    animation: neon-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+}
+
+@layer base {
+  @keyframes neon-pulse {
+    0%, 100% {
+      box-shadow:
+        0 0 0 1px hsl(var(--primary) / 0.35),
+        0 0 14px -2px hsl(var(--primary) / 0.35);
+    }
+    50% {
+      box-shadow:
+        0 0 0 1px hsl(var(--primary) / 0.55),
+        0 0 28px -2px hsl(var(--primary) / 0.55),
+        0 0 48px -8px hsl(var(--accent) / 0.3);
+    }
+  }
+  @keyframes neon-ping {
+    0% { box-shadow: 0 0 0 0 hsl(var(--success) / 0.55); }
+    70% { box-shadow: 0 0 0 8px hsl(var(--success) / 0); }
+    100% { box-shadow: 0 0 0 0 hsl(var(--success) / 0); }
+  }
+
+  /* ── Shimmer sweep — usado em progress bars KPI ────────────────── */
+  @keyframes shimmer {
+    0%   { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  /* ── Fade-up reveal — entry animation pros KPI cards ───────────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .anim-fade-up {
+    animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .neon-pulse,
+    .neon-pulse-dot,
+    .anim-fade-up { animation: none; }
+  }
+}
