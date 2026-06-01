@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { BrandStrip, BrandFooter } from '@/components/BrandStrip';
+import { appUrl } from '@/lib/appUrl';
 
 const logoDmusic = '/logo-dmusic-white.webp';
 
@@ -114,7 +115,7 @@ export default function Login() {
     setOauthLoading(provider);
     const { error } = await supabase.auth.signInWithOAuth({
       provider,
-      options: { redirectTo: `${window.location.origin}/` },
+      options: { redirectTo: appUrl('/') },
     });
     if (error) {
       setOauthLoading(null);

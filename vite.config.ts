@@ -5,6 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // GitHub Pages serves project sites under /<repo>/. Em produção o app vive
+  // em joseedson18jc.github.io/dmusic-hub/, então todos os assets e rotas
+  // precisam desse prefixo. Em dev (vite serve) BASE_URL volta a ser "/".
+  base: mode === "production" ? "/dmusic-hub/" : "/",
   server: {
     host: "::",
     port: 8080,

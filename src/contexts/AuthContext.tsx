@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Session, User } from '@supabase/supabase-js';
 import { supabase } from '@/integrations/supabase/client';
+import { appUrl } from '@/lib/appUrl';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const supabaseAny = supabase as any;
@@ -101,7 +102,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       email,
       password,
       options: {
-        emailRedirectTo: `${window.location.origin}/login`,
+        emailRedirectTo: appUrl('/login'),
       },
     });
     // Se o Supabase retornou user mas sem session, precisa confirmar email.
@@ -116,7 +117,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const resetPassword = async (email: string) => {
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${window.location.origin}/reset-password`,
+      redirectTo: appUrl('/reset-password'),
     });
     return { error: error as Error | null };
   };

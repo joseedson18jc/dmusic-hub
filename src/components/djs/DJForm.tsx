@@ -13,6 +13,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Loader2 } from 'lucide-react';
 import { ImageUpload } from '@/components/ui/ImageUpload';
+import { appUrl } from '@/lib/appUrl';
 import type { Tables } from '@/integrations/supabase/types';
 
 const djSchema = z.object({
@@ -204,7 +205,7 @@ export function DJForm({ open, onOpenChange, dj, onSuccess }: DJFormProps) {
             // Dispara email de recuperação de senha — DJ recebe link
             // pra definir a própria senha. Usa SMTP nativo do Supabase.
             const { error: recErr } = await supabase.auth.resetPasswordForEmail(values.email, {
-              redirectTo: `${window.location.origin}/reset-password`,
+              redirectTo: appUrl('/reset-password'),
             });
 
             if (recErr) {

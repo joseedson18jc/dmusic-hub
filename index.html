@@ -2,13 +2,25 @@
 <html lang="pt-BR" class="dark">
   <head>
     <meta charset="UTF-8" />
+    <!-- SPA decoder para GitHub Pages: reverte o redirect do 404.html
+         (index.html?/rota → /rota) ANTES do React Router montar. -->
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      }(window.location));
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#05050A" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="icon" href="%BASE_URL%favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="%BASE_URL%favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="/logo-dmusic-white.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="%BASE_URL%logo-dmusic-white.webp" type="image/webp" fetchpriority="high">
     <title>DMusic Hub — Neon Syndicate · CRM para DJs</title>
     <meta name="description" content="DMusic Hub — Neon Syndicate: plataforma cyberpunk de gestão artística, bookings, contratos e financeiro para DJs e produtores." />
     <meta name="author" content="DMusic Hub" />

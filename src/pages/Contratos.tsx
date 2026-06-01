@@ -23,6 +23,7 @@ import { logContractEvent } from '@/lib/contractAudit';
 import { StatusPill, contractStatusToPill } from '@/components/StatusPill';
 import { KpiStat } from '@/components/KpiCard';
 import { EditorialHero } from '@/components/ui/EditorialHero';
+import { appUrl } from '@/lib/appUrl';
 
 const FALLBACK_TEMPLATES = [
   { id: 'booking-standard', name: 'Contrato de Booking Padrão', description: 'Contrato padrão para apresentações de DJ', category: 'contrato', fields: ['produtor', 'dj', 'evento', 'data', 'horario', 'cache', 'pagamento', 'cancelamento'] },
@@ -237,7 +238,7 @@ export default function Contratos() {
       const attemptN = sendMeta?.attempt_number ?? 1;
 
       // 2. Reusa link público de assinatura existente (se houver) ou aponta para o sistema
-      let contractLink = `${window.location.origin}/contratos`;
+      let contractLink = appUrl('/contratos');
       try {
         const { data: lastSig } = await (supabase as any)
           .from('contract_signatures')
@@ -249,7 +250,7 @@ export default function Contratos() {
           .limit(1)
           .maybeSingle();
         if (lastSig?.token) {
-          contractLink = `${window.location.origin}/assinar/${lastSig.token}`;
+          contractLink = appUrl(`/assinar/${lastSig.token}`);
         }
       } catch {
         // segue com link genérico
@@ -349,7 +350,7 @@ export default function Contratos() {
       }
 
       const token: string = data.token;
-      const url = `${window.location.origin}/assinar/${token}`;
+      const url = appUrl(`/assinar/${token}`);
       setSignLink({ url, contractName: contract.template_name });
 
       await logContractEvent({
