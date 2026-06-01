@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- SPA decoder para GitHub Pages: reverte o redirect do 404.html
+         (index.html?/rota → /rota) ANTES do React Router montar. -->
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      }(window.location));
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05050A" />
+    <link rel="icon" href="/dmusic-hub/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/dmusic-hub/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="/dmusic-hub/logo-dmusic-white.webp" type="image/webp" fetchpriority="high">
+    <title>DMusic Hub — Neon Syndicate · CRM para DJs</title>
+    <meta name="description" content="DMusic Hub — Neon Syndicate: plataforma cyberpunk de gestão artística, bookings, contratos e financeiro para DJs e produtores." />
+    <meta name="author" content="DMusic Hub" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="DMusic Hub — Neon Syndicate" />
+    <meta name="twitter:title" content="DMusic Hub — Neon Syndicate" />
+    <meta property="og:description" content="Plataforma cyberpunk de gestão para DJs e produtores: bookings, contratos, financeiro e portais." />
+    <meta name="twitter:description" content="Plataforma cyberpunk de gestão para DJs e produtores: bookings, contratos, financeiro e portais." />
+    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e7ea13be-b6d0-4b15-b310-a63ebeac3bb6/id-preview-7fed39a2--0d144ec6-3b8a-4a9d-b922-854ff17ec56d.lovable.app-1773865490342.png">
+    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e7ea13be-b6d0-4b15-b310-a63ebeac3bb6/id-preview-7fed39a2--0d144ec6-3b8a-4a9d-b922-854ff17ec56d.lovable.app-1773865490342.png">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap"></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap"></noscript>
+    <script>
+      requestAnimationFrame(function(){var f=['https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap','https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap','https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap'];f.forEach(function(u){var l=document.createElement('link');l.rel='stylesheet';l.href=u;l.crossOrigin='anonymous';document.head.appendChild(l)})});
+    </script>
+  <script type="module" crossorigin src="/dmusic-hub/assets/index-e_MmSmc9.js"></script>
+  <link rel="modulepreload" crossorigin href="/dmusic-hub/assets/forms-C8TAW5eR.js">
+  <link rel="modulepreload" crossorigin href="/dmusic-hub/assets/radix-DUHYtUR-.js">
+  <link rel="modulepreload" crossorigin href="/dmusic-hub/assets/pdf-nr25RfKQ.js">
+  <link rel="modulepreload" crossorigin href="/dmusic-hub/assets/icons-CbgH5QOD.js">
+  <link rel="modulepreload" crossorigin href="/dmusic-hub/assets/supabase-B-4bM83C.js">
+  <link rel="stylesheet" crossorigin href="/dmusic-hub/assets/index-D3eX5qeA.css">
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
